@@ -49,7 +49,7 @@ public class SwiftYandexKassaPlugin: NSObject, FlutterPlugin {
                 let vc = RootViewController()
                 
                 vc.modalPresentationStyle = .overCurrentContext
-                UIApplication.shared.delegate!.window!!.rootViewController!.present(vc, animated: false, completion: nil)
+                UIApplication.topViewController()?.present(vc, animated: false, completion: nil)
                 
                 
                 if (call.method == "startCheckout") {
