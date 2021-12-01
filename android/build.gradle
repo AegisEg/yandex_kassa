@@ -1,4 +1,4 @@
-group 'com.allfuneral.yookassa_flutter_sdk'
+group 'com.allfuneral.yandex_kassa'
 version '1.0-SNAPSHOT'
 
 buildscript {

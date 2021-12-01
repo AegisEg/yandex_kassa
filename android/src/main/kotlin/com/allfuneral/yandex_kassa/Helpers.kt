@@ -1,4 +1,4 @@
-package com.allfuneral.yookassa_flutter_sdk
+package com.allfuneral.yandex_kassa
 
 import android.graphics.Color
 import ru.yoomoney.sdk.kassa.payments.checkoutParameters.*

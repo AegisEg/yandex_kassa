@@ -1,4 +1,4 @@
-package com.allfuneral.yookassa_flutter_sdk
+package com.allfuneral.yandex_kassa
 
 import androidx.annotation.NonNull
 import io.flutter.embedding.engine.plugins.FlutterPlugin

@@ -1,6 +1,6 @@
 name: yookassa_flutter_sdk
 description: Yandex.Kassa plugin for both Android and iOS platforms
-version: 1.0.1
+version: 1.0.3-null-safety
 homepage: https://github.com/kardenwork/yookassa_flutter_sdk
 repository: https://github.com/kardenwork/yookassa_flutter_sdk
 
