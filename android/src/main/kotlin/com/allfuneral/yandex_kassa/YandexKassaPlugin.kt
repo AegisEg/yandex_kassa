@@ -1,4 +1,4 @@
-package com.allfuneral.yandex_kassa
+package com.allfuneral.yookassa_flutter_sdk
 
 import androidx.annotation.NonNull
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -23,7 +23,7 @@ public class YandexKassaPlugin : FlutterPlugin, MethodCallHandler, YandexKassa()
 
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        channel = MethodChannel(flutterPluginBinding.binaryMessenger, "yandex_kassa")
+        channel = MethodChannel(flutterPluginBinding.binaryMessenger, "yookassa_flutter_sdk")
         channel.setMethodCallHandler(this);
     }
 
@@ -39,7 +39,7 @@ public class YandexKassaPlugin : FlutterPlugin, MethodCallHandler, YandexKassa()
     companion object {
         @JvmStatic
         fun registerWith(registrar: Registrar) {
-            val channel = MethodChannel(registrar.messenger(), "yandex_kassa")
+            val channel = MethodChannel(registrar.messenger(), "yookassa_flutter_sdk")
             channel.setMethodCallHandler(YandexKassaPlugin())
         }
     }

@@ -1,4 +1,4 @@
-package com.allfuneral.yandex_kassa_example
+package com.allfuneral.yookassa_flutter_sdk_example
 
 import io.flutter.embedding.android.FlutterActivity
 

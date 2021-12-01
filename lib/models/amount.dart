@@ -1,4 +1,4 @@
-import 'package:yandex_kassa/models/currency.dart';
+import 'package:yookassa_flutter_sdk/models/currency.dart';
 
 import 'json_encodable.dart';
 
@@ -8,7 +8,6 @@ class Amount implements JsonEncodable {
   Amount(this.value, {this.currency = Currency.rub});
 
   factory Amount.fromJson(Map json) {
-    if (json == null) return null;
     return Amount(json['value'], currency: Currency(json['currency']));
   }
 

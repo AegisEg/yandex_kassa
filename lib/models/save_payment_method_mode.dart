@@ -10,7 +10,6 @@ class SavePaymentMethodMode implements JsonEncodable {
   const SavePaymentMethodMode._(this._mode);
 
   factory SavePaymentMethodMode(String mode) {
-    if (mode == null) return null;
     SavePaymentMethodMode _curMode = SavePaymentMethodMode._(mode);
     if (values.contains(_curMode)) {
       return _curMode;

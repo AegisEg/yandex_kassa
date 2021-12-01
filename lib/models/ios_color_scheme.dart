@@ -1,5 +1,5 @@
-import 'package:yandex_kassa/models/json_encodable.dart';
-import 'package:yandex_kassa/yandex_kassa.dart';
+import 'package:yookassa_flutter_sdk/models/json_encodable.dart';
+import 'package:yookassa_flutter_sdk/yookassa_module.dart';
 
 /// IOS Color Scheme. If [white] is not empty - [red], [green] and [blue] parameters will be ignored.
 class IosColorScheme extends AndroidColorScheme implements JsonEncodable {
@@ -94,12 +94,11 @@ class IosColorScheme extends AndroidColorScheme implements JsonEncodable {
       {this.red = 0,
       this.green = 0,
       this.blue = 0,
-      this.white,
+      this.white = 255,
       this.alpha = 255})
       : super(red: red, green: green, blue: blue);
 
   factory IosColorScheme.fromJson(Map json) {
-    if (json == null) return null;
     return IosColorScheme(
         red: json['red'],
         green: json['green'],
@@ -109,7 +108,7 @@ class IosColorScheme extends AndroidColorScheme implements JsonEncodable {
   }
 
   @override
-  Map<String, int> get json => {
+  Map<String, int?> get json => {
         'red': red,
         'green': green,
         'blue': blue,

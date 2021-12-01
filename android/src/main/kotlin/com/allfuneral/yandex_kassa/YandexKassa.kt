@@ -1,4 +1,4 @@
-package com.allfuneral.yandex_kassa
+package com.allfuneral.yookassa_flutter_sdk
 
 import android.app.Activity
 import android.content.Intent

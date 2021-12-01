@@ -16,7 +16,6 @@ class GooglePayCardNetwork {
       const GooglePayCardNetwork._('OTHER');
 
   factory GooglePayCardNetwork(String network) {
-    if (network == null) return null;
     GooglePayCardNetwork _curNetwork = GooglePayCardNetwork._(network);
     if (values.contains(_curNetwork)) {
       return _curNetwork;

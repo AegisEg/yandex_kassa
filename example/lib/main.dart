@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:yandex_kassa/yandex_kassa.dart';
 import 'package:http_client/console.dart';
+import 'package:yookassa_flutter_sdk/yookassa_module.dart';
 
 void main() {
   runApp(MyApp());
@@ -78,8 +78,8 @@ class _MyAppState extends State<MyApp> {
                     child: OutlineButton(
                         child: const Text('Open payment screen'),
                         onPressed: () async {
-                          final result = await YandexKassa.startCheckout(
-                              paymentParameters);
+                          final result =
+                              await YooKassa.startCheckout(paymentParameters);
                           setState(() {
                             tokenizationResult = result;
                           });

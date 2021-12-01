@@ -12,7 +12,6 @@ class PaymentMethod implements JsonEncodable {
   const PaymentMethod._(this._method);
 
   factory PaymentMethod(String method) {
-    if (method == null) return null;
     PaymentMethod _curMethod = PaymentMethod._(method);
     if (values.contains(_curMethod)) {
       return _curMethod;

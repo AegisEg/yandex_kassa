@@ -1,5 +1,4 @@
-import 'package:flutter/widgets.dart';
-import 'package:yandex_kassa/models/amount.dart';
+import 'package:yookassa_flutter_sdk/models/amount.dart';
 
 import 'json_encodable.dart';
 
@@ -27,7 +26,7 @@ class IosTestModeSettings implements JsonEncodable {
   ///
   /// - Returns: Instance of `IosTestModeSettings`.
   IosTestModeSettings(
-      {@required this.charge,
+      {required this.charge,
       this.cardsCount = 1,
       this.enablePaymentError = false,
       this.paymentAuthorizationPassed: true});

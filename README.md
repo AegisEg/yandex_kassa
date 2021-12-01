@@ -1,11 +1,11 @@
-# yandex_kassa
+# yookassa_flutter_sdk
 
-Yandex.Kassa (Yandex.Checkout) plugin for both Android and iOS platforms.
+Yandex.Kassa plugin for both Android and iOS platforms.
 Implements Yandex Checkout SDK for Flutter.
 Official documentation can be found here:
 
-* [(Android)](https://github.com/yandex-money/yandex-checkout-android-sdk)
-* [(Ios)](https://github.com/yandex-money/yandex-checkout-payments-swift)
+* [(Android)](https://github.com/yoomoney/yookassa-android-sdk)
+* [(Ios)](https://github.com/yoomoney/yookassa-payments-swift)
 
 Please, follow the [official documentation](https://kassa.yandex.ru/developers/payments/quick-start) for quick start.
 Note, that you need to get `.framework` files from Yandex Money support to use plugin for iOS.
@@ -21,7 +21,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:yandex_kassa/yandex_kassa.dart';
+import 'package:yookassa_flutter_sdk/yookassa_flutter_sdk.dart';
 import 'package:http_client/console.dart';
 
 void main() {

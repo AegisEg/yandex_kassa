@@ -8,7 +8,7 @@ import YandexCheckoutPaymentsApi
 
 public class SwiftYandexKassaPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "yandex_kassa", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "yookassa_flutter_sdk", binaryMessenger: registrar.messenger())
         let instance = SwiftYandexKassaPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
         registrar.addApplicationDelegate(instance)

@@ -9,7 +9,6 @@ class Currency implements JsonEncodable {
   const Currency._(this._type);
 
   factory Currency(String type) {
-    if (type == null) return null;
     Currency _curType = Currency._(type);
     if (values.contains(_curType)) {
       return _curType;

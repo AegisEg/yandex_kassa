@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:yandex_kassa/kassa.dart';
-import 'package:yandex_kassa/models/payment_parameters.dart';
-import 'package:yandex_kassa/yandex_kassa.dart';
+import 'package:yookassa_flutter_sdk/models/payment_parameters.dart';
+import 'package:yookassa_flutter_sdk/yookassa.dart';
+import 'package:yookassa_flutter_sdk/yookassa_module.dart';
 
 void main() {
   final paymentParameters = PaymentParameters(
@@ -22,7 +22,7 @@ void main() {
           paymentMethod: PaymentMethod.bankCard, token: "some_fake_token"),
       success: true);
 
-  const MethodChannel channel = MethodChannel('yandex_kassa');
+  const MethodChannel channel = MethodChannel('yookassa_flutter_sdk');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -37,7 +37,7 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    final result = await YandexKassa.startCheckout(paymentParameters);
+    final result = await YooKassa.startCheckout(paymentParameters);
 
     expect(result.json, tokenizationResult.json);
   });

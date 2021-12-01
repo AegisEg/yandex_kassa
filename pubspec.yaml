@@ -1,12 +1,12 @@
-name: yandex_kassa
-description: Yandex.Kassa (Yandex.Checkout) plugin for both Android and iOS platforms
+name: yookassa_flutter_sdk
+description: Yandex.Kassa plugin for both Android and iOS platforms
 version: 1.0.1
-homepage: https://github.com/idrats/yandex_kassa
-repository: https://github.com/idrats/yandex_kassa
+homepage: https://github.com/kardenwork/yookassa_flutter_sdk
+repository: https://github.com/kardenwork/yookassa_flutter_sdk
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.10.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.5.0"
 
 dependencies:
   flutter:
